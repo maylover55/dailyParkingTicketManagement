@@ -805,10 +805,10 @@ metadata:
   name: parking
 data:
   maxparking: "5"
-  urlstatus: "jdbc:mysql://parking.c53pn2vpupsn.us-east-2.rds.amazonaws.com:3306/status?serverTimezone=UTC&useUnicode=true&characterEncoding=utf8"
-  urlparkinglot: "jdbc:mysql://parking.c53pn2vpupsn.us-east-2.rds.amazonaws.com:3306/parkinglot?serverTimezone=UTC&useUnicode=true&characterEncoding=utf8"
-  urlticketreservation: "jdbc:mysql://parking.c53pn2vpupsn.us-east-2.rds.amazonaws.com:3306/ticketreservation?serverTimezone=UTC&useUnicode=true&characterEncoding=utf8"
-  urlticketdelivery: "jdbc:mysql://parking.c53pn2vpupsn.us-east-2.rds.amazonaws.com:3306/ticketdelivery?serverTimezone=UTC&useUnicode=true&characterEncoding=utf8"
+  urlstatus: "jdbc:mysql://xxxx.rds.amazonaws.com:3306/status?serverTimezone=UTC&useUnicode=true&characterEncoding=utf8"
+  urlparkinglot: "jdbc:mysql://xxxx.rds.amazonaws.com:3306/parkinglot?serverTimezone=UTC&useUnicode=true&characterEncoding=utf8"
+  urlticketreservation: "jdbc:mysql://xxxx.rds.amazonaws.com:3306/ticketreservation?serverTimezone=UTC&useUnicode=true&characterEncoding=utf8"
+  urlticketdelivery: "jdbc:mysql://xxxx.us-east-2.rds.amazonaws.com:3306/ticketdelivery?serverTimezone=UTC&useUnicode=true&characterEncoding=utf8"
 EOF
 ```
 
@@ -827,7 +827,7 @@ metadata:
   name: parking
 type: Opaque
 data:
-  username: cm9vdA==
+  username: xxxxxxxx== <- 보안 상, 임의의 값으로 표시함
   password: xxxxxxxx== <- 보안 상, 임의의 값으로 표시함
 EOF
 ```
