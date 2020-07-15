@@ -407,8 +407,8 @@ public interface TicketReservationRepository extends PagingAndSortingRepository<
 ```
 ## 적용 후 REST API의 테스트
 
-% 본 READNE.md 파일에 포함된 결과 증적 이미지들은 개인 과제를 사전 준비하면서 작성한 자료입니다.
-% 교육 기간에 발급 받은 개인 계정(ADMIN16)으로 전체 신규 구성 및 테스트 하였으나, 이미지는 업데이트 하지 않았습니다.
+- 본 READNE.md 파일에 포함된 결과 증적 이미지들은 개인 과제를 사전 준비하면서 작성한 자료입니다.
+- 교육 기간에 발급 받은 개인 계정(ADMIN16)으로 전체 신규 구성 및 테스트 하였으나, 이미지는 업데이트 하지 않았습니다.
 
 - 일일주차권 예약
 1. ticketReservation POST 호출
