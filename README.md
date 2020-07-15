@@ -889,9 +889,8 @@ EOF
 ```
 siege -c100 -t60S --content-type "application/json" 'http://a63c1be5dd2104b04a6b0de92e51a7e8-1186153420.us-east-2.elb.amazonaws.com:8080/ticketReservations POST {"memberId": "88", "reservationDate": "2020-07-13"}'
 
-- 호출 구조 : TicketReservation (kafka) -> ParkingLot (동기 호출) -> TicketDelivery
-- TicketReservation 서비스에 부하를 주어도 ParkingLot에는 kafka를 통해 전달이 되어서 인지, 서킷 브레이커 동작 확인을 못함
-- parkingLot은 POST REST API를 제공하지 않아, parkingLot에 직접 부하를 주지 못함
+- 이번 평가 기간 전에 개인 과제는 사전 준비를 했는데, istio pod가 올라오지 않아, 실제 테스트까지 진행하지 못했었습니다.
+- 평가 기간에 강사님께 문의 드려 깨달은 사항은 istio 올리려면 node가 많이 필요...
 
 ```
 
