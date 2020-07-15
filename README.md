@@ -685,6 +685,16 @@ public class PolicyHandler{
 }
 
 ```
+- 위 코드에서 status를 text로 하드 코딩하는 것은 (예: "ParkingLot fully Occupied") 좋지 않음
+- 오타 등으로 인한 오류 발생 가능성 및 변경시 관련 소스 전체 변경 필요
+- 아래 코드와 같이 class를 만들어 static final 변수로 사용함(예: StatusType.FullyOccupied)
+```
+public class StatusType {
+    static final String FullyOccupied = "ParkingLot fully Occupied";
+    static final String Occupied = "ParkingLot Occupied";
+    static final String Vacated = "ParkingLot Vacated";
+}
+```
 
 주차장 시스템은 주차권 예약과 완전히 분리되어 있으며, 이벤트 수신에 따라 처리되기 때문에, 주차장 시스템이 유지보수로 인해 잠시 내려간 상태라도 주차권 예약을 받는데 문제가 없다.
 ```
