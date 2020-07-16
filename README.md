@@ -738,6 +738,7 @@ http http://a63c1be5dd2104b04a6b0de92e51a7e8-1186153420.us-east-2.elb.amazonaws.
 
 
 각 구현체들은 각자의 source repository 에 구성되었고, CI/CD 플랫폼은 AWS Code Build를 사용하였으며, pipeline build script 는 각 프로젝트 폴더 이하에 buildspec.yml 에 포함되었다.
+- gateway : https://github.com/maylover55/gateway
 - TicketReservation(일일주차권 예약) : https://github.com/maylover55/TicketReservation
 - ParkiongLot(주차장) : https://github.com/maylover55/ParkingLot
 - TicketDelivery(주차권 배송) : https://github.com/maylover55/TicketDelivery
